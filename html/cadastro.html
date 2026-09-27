@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cadastre seu interesse em apoiar as iniciativas da Mãos que Transformam como voluntário ou doador.">
+  <title>Participe | Mãos que Transformam</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script type="module" src="../assets/js/form.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Mãos que Transformam — página inicial"><img src="../assets/images/logo.svg" alt="" width="48" height="48"><span>Mãos que <strong>Transformam</strong></span></a>
+    <nav aria-label="Navegação principal"><ul class="nav-list"><li><a href="index.html">Início</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="cadastro.html" aria-current="page">Participe</a></li></ul></nav>
+  </header>
+  <main id="conteudo">
+    <section class="page-hero wrap" aria-labelledby="titulo-principal"><p class="eyebrow">Faça parte</p><h1 id="titulo-principal">Vamos construir essa rede <span>juntos?</span></h1><p class="lead">Preencha o formulário para manifestar seu interesse em ser voluntário ou apoiar as iniciativas.</p></section>
+    <section class="section wrap form-layout" aria-labelledby="formulario-titulo">
+      <aside class="form-aside"><h2>Antes de começar</h2><p>Os campos marcados com <span aria-hidden="true">*</span> são obrigatórios. Seus dados são usados apenas para este contato demonstrativo e não são enviados a um servidor.</p><p>Dúvidas? Escreva para <a href="mailto:contato@maosquetransformam.org.br">contato@maosquetransformam.org.br</a>.</p></aside>
+      <div class="form-panel"><h2 id="formulario-titulo">Cadastro de interesse</h2>
+        <form id="cadastro-form" action="#" method="get">
+          <fieldset><legend>Dados pessoais</legend>
+            <div class="field"><label for="nome">Nome completo <span aria-hidden="true">*</span></label><input id="nome" name="nome" type="text" autocomplete="name" minlength="3" maxlength="100" required></div>
+            <div class="field-row"><div class="field"><label for="cpf">CPF <span aria-hidden="true">*</span></label><input id="cpf" name="cpf" type="text" inputmode="numeric" autocomplete="off" placeholder="000.000.000-00" pattern="[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}-?[0-9]{2}" maxlength="14" title="Digite um CPF com 11 números." required></div><div class="field"><label for="nascimento">Data de nascimento <span aria-hidden="true">*</span></label><input id="nascimento" name="nascimento" type="date" autocomplete="bday" required></div></div>
+            <div class="field-row"><div class="field"><label for="email">E-mail <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" maxlength="150" required></div><div class="field"><label for="telefone">Telefone <span aria-hidden="true">*</span></label><input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 91234-5678" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" maxlength="15" title="Use o formato (11) 91234-5678." required></div></div>
+          </fieldset>
+          <fieldset><legend>Endereço</legend>
+            <div class="field-row"><div class="field"><label for="cep">CEP <span aria-hidden="true">*</span></label><input id="cep" name="cep" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="00000-000" pattern="[0-9]{5}-?[0-9]{3}" maxlength="9" title="Digite os 8 números do CEP." required></div><div class="field"><label for="estado">Estado <span aria-hidden="true">*</span></label><select id="estado" name="estado" autocomplete="address-level1" required><option value="">Selecione</option><option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option><option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option><option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option><option>SE</option><option>TO</option></select></div></div>
+            <div class="field"><label for="cidade">Cidade <span aria-hidden="true">*</span></label><input id="cidade" name="cidade" type="text" autocomplete="address-level2" maxlength="80" required></div>
+            <div class="field-row"><div class="field"><label for="logradouro">Rua / avenida <span aria-hidden="true">*</span></label><input id="logradouro" name="logradouro" type="text" autocomplete="address-line1" maxlength="120" required></div><div class="field field-short"><label for="numero">Número <span aria-hidden="true">*</span></label><input id="numero" name="numero" type="text" autocomplete="off" maxlength="10" required></div></div>
+            <div class="field"><label for="complemento">Complemento <span class="optional">(opcional)</span></label><input id="complemento" name="complemento" type="text" autocomplete="address-line2" maxlength="80"></div>
+          </fieldset>
+          <fieldset><legend>Como deseja participar?</legend>
+            <p class="field-hint">Selecione uma ou mais opções.</p>
+            <div class="choice-list"><label class="choice"><input type="checkbox" name="interesse" value="voluntariado"><span>Quero ser voluntário(a)</span></label><label class="choice"><input type="checkbox" name="interesse" value="doacao"><span>Quero saber como apoiar financeiramente</span></label><label class="choice"><input type="checkbox" name="interesse" value="parceria"><span>Quero conversar sobre uma parceria</span></label></div>
+            <div class="field"><label for="disponibilidade">Disponibilidade ou habilidades <span class="optional">(opcional)</span></label><textarea id="disponibilidade" name="disponibilidade" rows="4" maxlength="500" placeholder="Conte em poucas palavras como gostaria de contribuir."></textarea></div>
+          </fieldset>
+          <div class="field consent"><label class="choice"><input type="checkbox" name="consentimento" value="aceito" required><span>Concordo que a organização entre em contato sobre meu interesse. <span aria-hidden="true">*</span></span></label></div>
+          <p id="form-feedback" class="form-feedback" role="status" aria-live="polite"></p>
+          <div id="form-toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden><span class="toast-icon" aria-hidden="true">✓</span><span id="toast-message">Cadastro demonstrativo validado.</span><button class="toast-close" type="button" aria-label="Fechar notificação">×</button></div>
+          <button class="button" type="submit">Enviar cadastro</button>
+          <p class="fine-print">Demonstração acadêmica: este formulário não transmite nem armazena dados.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand brand-footer" href="index.html"><img src="../assets/images/logo.svg" alt="" width="36" height="36"><span>Mãos que <strong>Transformam</strong></span></a><p>Projeto acadêmico demonstrativo · 2026</p></div></footer>
+  <script src="../assets/js/app.js" defer></script>
+</body>
+</html>

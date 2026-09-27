@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça as iniciativas solidárias da Mãos que Transformam e descubra como doar ou ser voluntário.">
+  <title>Projetos e iniciativas | Mãos que Transformam</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Mãos que Transformam — página inicial"><img src="../assets/images/logo.svg" alt="" width="48" height="48"><span>Mãos que <strong>Transformam</strong></span></a>
+    <nav aria-label="Navegação principal"><ul class="nav-list"><li><a href="index.html">Início</a></li><li><a href="projetos.html" aria-current="page">Projetos</a></li><li><a href="cadastro.html">Participe</a></li></ul></nav>
+  </header>
+  <main id="conteudo">
+    <section class="page-hero wrap" aria-labelledby="titulo-principal"><p class="eyebrow">Nossas iniciativas</p><h1 id="titulo-principal">Caminhos diferentes para <span>fazer o bem.</span></h1><p class="lead">Conheça as frentes de atuação e escolha a forma de apoio que combina com você.</p></section>
+    <section class="section wrap" aria-labelledby="projetos-titulo">
+      <div class="section-heading"><div><p class="eyebrow">Frentes de atuação</p><h2 id="projetos-titulo">Projetos que aproximam</h2></div></div>
+      <div class="alert alert-info" role="note" aria-label="Informação sobre as iniciativas"><span class="alert-icon" aria-hidden="true">i</span><p><strong>Como participar:</strong> escolha uma iniciativa e veja as formas de apoio indicadas em cada projeto.</p></div>
+      <div class="project-list" id="project-list" aria-live="polite"></div>
+      <template id="project-card-template">
+        <article class="project-card">
+          <div class="project-number" aria-hidden="true"></div>
+          <div>
+            <div class="badge-list"></div>
+            <p class="eyebrow project-category"></p>
+            <h3 class="project-title"></h3>
+            <p class="project-description"></p>
+            <h4>Como apoiar</h4>
+            <ul class="project-actions"></ul>
+          </div>
+        </article>
+      </template>
+    </section>
+    <section class="section section-soft" aria-labelledby="doacao-titulo"><div class="wrap two-col"><div><p class="eyebrow">Contribuição financeira</p><h2 id="doacao-titulo">Sua doação fortalece cada iniciativa</h2></div><div class="prose"><p>As contribuições financeiras ajudam a planejar compras, materiais e atividades de acordo com as necessidades das ações. Este projeto é demonstrativo: não recebe nem processa doações reais.</p><p>Para conversar sobre uma contribuição ou parceria, entre em contato com a equipe.</p><a class="button" href="mailto:contato@maosquetransformam.org.br?subject=Quero%20apoiar">Falar sobre doação</a></div></div></section>
+    <section class="section wrap" aria-labelledby="voluntariado-titulo"><div class="two-col"><div><p class="eyebrow">Trabalho voluntário</p><h2 id="voluntariado-titulo">Seu tempo e suas habilidades fazem diferença</h2></div><div class="prose"><p>Há oportunidades pontuais e recorrentes em diferentes frentes. Conte um pouco sobre seus interesses e disponibilidade para encontrarmos uma forma de participação adequada.</p><ol><li>Conheça as iniciativas e escolha uma área de interesse.</li><li>Preencha o cadastro com seus dados e disponibilidade.</li><li>A equipe entra em contato para combinar os próximos passos.</li></ol><a class="button" href="cadastro.html">Cadastrar interesse voluntário</a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand brand-footer" href="index.html"><img src="../assets/images/logo.svg" alt="" width="36" height="36"><span>Mãos que <strong>Transformam</strong></span></a><p>Projeto acadêmico demonstrativo · 2026</p></div></footer>
+  <script type="module" src="../assets/js/project-cards.js"></script>
+  <script src="../assets/js/app.js" defer></script>
+</body>
+</html>
