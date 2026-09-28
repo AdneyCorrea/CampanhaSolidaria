@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Campanha Solidária
 
 Projeto acadêmico demonstrativo de uma plataforma front-end para divulgação de iniciativas de uma organização social fictícia.
@@ -25,3 +26,7 @@ Use mensagens de commit semânticas, por exemplo `feat: add SPA navigation` ou `
 ## Acessibilidade e validação
 
 As páginas usam HTML semântico, rótulos de formulário, mensagens associadas aos campos e regiões de status acessíveis. Os documentos HTML foram verificados com o Nu HTML Checker. A verificação automatizada não substitui testes manuais com teclado, leitor de tela e diferentes navegadores.
+=======
+# CampanhaSolidaria
+Eng.Software project
+>>>>>>> 781e0d9e34e2ba40c7e5daac5de90ac97210a88d
