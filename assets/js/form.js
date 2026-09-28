@@ -1,8 +1,9 @@
 import { loadParticipationPreferences, saveParticipationPreferences } from './storage.js';
 
-(() => {
+export function initializeForm() {
   const form = document.querySelector('#cadastro-form');
-  if (!form) return;
+  if (!form || form.dataset.initialized) return;
+  form.dataset.initialized = 'true';
 
   const toast = document.querySelector('#form-toast');
   const toastMessage = document.querySelector('#toast-message');
@@ -183,4 +184,4 @@ import { loadParticipationPreferences, saveParticipationPreferences } from './st
     feedback.textContent = 'Cadastro demonstrativo validado. Nenhum dado foi enviado ou armazenado.';
     showToast('Cadastro validado. Nenhum dado foi enviado ou armazenado.');
   });
-})();
+}

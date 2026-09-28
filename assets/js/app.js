@@ -22,18 +22,15 @@
     });
   };
 
-  const initializePageScripts = () => {
-    document.querySelectorAll('script[data-spa-page-script]').forEach((script) => script.remove());
-    const pageScripts = [];
-    if (document.querySelector('#cadastro-form')) pageScripts.push(['cadastro', '../assets/js/form.js']);
-    if (document.querySelector('#project-list')) pageScripts.push(['projetos', '../assets/js/project-cards.js']);
-    pageScripts.forEach(([page, source]) => {
-      const script = document.createElement('script');
-      script.type = 'module';
-      script.src = source;
-      script.dataset.spaPageScript = page;
-      document.body.append(script);
-    });
+  const initializePageScripts = async () => {
+    if (document.querySelector('#cadastro-form')) {
+      const { initializeForm } = await import('./form.js');
+      initializeForm();
+    }
+    if (document.querySelector('#project-list')) {
+      const { initializeProjectCards } = await import('./project-cards.js');
+      initializeProjectCards();
+    }
   };
 
   const renderRoute = async (url, { addHistory = false, restoreScroll = true } = {}) => {
@@ -52,7 +49,7 @@
       if (description && nextDescription) description.content = nextDescription;
       if (addHistory) window.history.pushState({ spa: true }, '', url.href);
       updateNavigation();
-      initializePageScripts();
+      await initializePageScripts();
 
       const heading = main.querySelector('h1');
       if (heading) {
@@ -83,4 +80,5 @@
   });
 
   updateNavigation();
+  initializePageScripts();
 })();

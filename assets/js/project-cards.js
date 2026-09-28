@@ -1,4 +1,4 @@
-(() => {
+export function initializeProjectCards() {
   const list = document.querySelector('#project-list');
   const template = document.querySelector('#project-card-template');
   if (!list || !template) return;
@@ -50,4 +50,4 @@
     fragment.append(card);
   });
   list.replaceChildren(fragment);
-})();
+}
