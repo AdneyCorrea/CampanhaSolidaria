@@ -1,2 +1,0 @@
-# CampanhaSolidaria
-Eng.Software project
